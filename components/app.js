@@ -8,7 +8,7 @@ export default class AppComponent extends React.Component {
         <h2>Welcome to my App</h2>
         <ul>
           <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/authorize_user'>API TEST</Link></li>
         </ul>
         { this.props.children }
       </div>
