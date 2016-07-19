@@ -38,9 +38,9 @@ exports.handleauth = function(req, res) {
 }
  
 // This is where you would initially send users to authorize 
-app.get('/authorize_user', exports.authorize_user);
+app.get('/authorize_user', exports.authorize_user)
 // This is your redirect URI 
-app.get('/handleauth', exports.handleauth);
+app.get('/handleauth', exports.handleauth)
 
 app.get('*', (req, res) => {
   // routes is our object of react routes defined above

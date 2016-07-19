@@ -64,7 +64,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router, { routes: routes, history: (0, _createBrowserHistory2.default)() }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_reactRouter.Router, { routes: _routes.routes, history: _reactRouter.browserHistory }), document.getElementById('app'));
 
 	// Use HTML5 history API rather than hashbang(#!)
 
@@ -27073,8 +27073,8 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/about' },
-	              'About'
+	              { to: '/authorize_user' },
+	              'API TEST'
 	            )
 	          )
 	        ),
@@ -27165,6 +27165,10 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	// import { token } from './../server.js'
+
+	// var ig = require('instagram-node').instagram();
+
 	var AboutComponent = function (_React$Component) {
 	  _inherits(AboutComponent, _React$Component);
 
@@ -27175,16 +27179,15 @@
 	  }
 
 	  _createClass(AboutComponent, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {}
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'About Me'
-	        )
+	        _react2.default.createElement('p', null)
 	      );
 	    }
 	  }]);
