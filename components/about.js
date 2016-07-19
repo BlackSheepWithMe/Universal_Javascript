@@ -1,7 +1,5 @@
 import React from 'react'
-// import { token } from './../server.js'
-
-// var ig = require('instagram-node').instagram();
+// import { token } from './../server'
 
 export default class AboutComponent extends React.Component {
   componentDidMount() {
@@ -11,7 +9,7 @@ export default class AboutComponent extends React.Component {
   render() {
     return (
       <div>
-        <p></p>
+        <p>About Page</p>
       </div>
     );
   }
